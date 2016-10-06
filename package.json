@@ -1,0 +1,40 @@
+{
+  "name": "nice-is-email",
+  "version": "1.0.0",
+  "description": "Checks whether provided parameter looks like a valid e-mail address",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node test | tap-difflet && vtest test | tap-difflet && standard",
+    "cover": "istanbul cover --report none --print detail test/index.js",
+    "view-cover": "istanbul report html && open ./coverage/index.html",
+    "watch": "nodemon test | tap-difflet",
+    "travis": "npm run cover -s && istanbul report lcov && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vigour-io/nice-is-email.git"
+  },
+  "keywords": [
+    "getOwnPropertyDescriptors",
+    "prototype",
+    "email",
+    "util"
+  ],
+  "author": "Vigour.io <dev@vigour.io>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vigour-io/nice-is-email/issues"
+  },
+  "homepage": "https://github.com/vigour-io/nice-is-email#readme",
+  "contributors": [
+    "Jim De Beer <jim@vigour.io>",
+    "Shawn Inder <shawn@vigour.io>"
+  ],
+  "dependencies": {},
+  "engines": {},
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "standard": "^7.1.2",
+    "tape": "^4.5.1"
+  }
+}
