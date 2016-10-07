@@ -1,6 +1,6 @@
 {
   "name": "nice-is-email",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks whether provided parameter looks like a valid e-mail address",
   "main": "lib/index.js",
   "scripts": {
