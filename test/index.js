@@ -1,9 +1,9 @@
 'use strict'
-var test = require('tape')
-var isEmail = require('../')
+const test = require('tape')
+const isEmail = require('../')
 
 // The following test cases are based on https://en.wikipedia.org/wiki/Email_address#Syntax
-var localParts = [
+const localParts = [
 // ['email', expectedResult]
   [makeChars(64) + '', true], // length
   [makeChars(65) + '', false], // length
@@ -33,7 +33,7 @@ var localParts = [
   return item
 })
 
-var domainParts = [
+const domainParts = [
   ['normal.com', false], // missing `@`
   ['@normal.com', true], // normal
   ['@hey(comment)ho.com', false], // comments

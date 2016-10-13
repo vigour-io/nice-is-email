@@ -20,7 +20,7 @@ Checks whether provided parameter looks like a valid e-mail address
 <!-- VDOC END -->
 
 ```javascript
-var isEmail = require('nice-is-email')
+const isEmail = require('nice-is-email')
 isEmail('foo@bar.com') // true
 isEmail('@bar') // false
 ```
